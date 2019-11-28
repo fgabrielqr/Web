@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8"/>
+	<link href="../css/style.css" rel="stylesheet"/>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+	<script src="../js/jquery-3.3.1.js"></script>
+	<script src="../js/jquery.mask.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/main.js"></script>
+    <title>Jogos Inter Campi</title>
+    <link rel="shortcut icon" href="../imagens/if.svg"/>
+</head>
+
+<body>
+
+<div class="flex-container">
+	<img id="layout" src="../imagens/logo.jpg" />
+		<ul id="sub">
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn"><a href="index.html" class="active"><img id="m1" src="../imagens/me.png" title="Menu"/></a>
+				<div class="dropdown-content">
+					<a id="I" href="index.html" title="inicio">Inicio</a>
+					<a id="C" href="index-cadastro.html" title="Cadastro">Cadastro</a>
+					<a id="S" href="index-esporte.html" title="Esporte">Esporte</a>
+				</div>
+			</li>
+		</ul>
+
+	<div id="cad"><h2>CADASTRO</h2><br/></div>
+
+	<form class="needs-validation" novalidate>
+		<div class="container">
+
+			<div class="row Form-group">
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+					 	<div class="input-group-prepend">
+					    	<span class="input-group-text" class="inputGroup-sizing-default">Matricula</span>
+					 	</div>
+					 	<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="matricula" placeholder="Matricula" required>
+					</div>
+				</div>
+			
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+					 	<div class="input-group-prepend">
+					    	<span class="input-group-text" class="inputGroup-sizing-default">CPF</span>
+					 	</div>
+					 	<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="cpf" placeholder="000.000.000-00" required>
+					</div>
+				</div>
+			</div>
+
+			<div class="row Form-group">
+				<div class="col-sm-7">
+					<div class="input-group mb-3">
+					 	<div class="input-group-prepend">
+					    	<span class="input-group-text" class="inputGroup-sizing-default">Nome</span>
+					 	</div>
+					 	<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="nome" placeholder="Nome completo" required>
+					</div>
+				</div>
+			
+				<div class="col-sm-5">
+					<div class="input-group mb-3">
+					 	<div class="input-group-prepend">
+					    	<span class="input-group-text" class="inputGroup-sizing-default">Data de Nascimento</span>
+					 	</div>
+					 	<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="data" placeholder="__/__/____" required>
+					</div>
+				</div>
+			</div>
+
+			<div class="row Form-group">
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+ 						<div class="input-group-prepend">
+    						<label class="input-group-text" for="inputGroupSelect01">Campus</label>
+  						</div>
+	                	<select id="campus" class="custom-select" class="inputGroupSelect01" required>
+		                   	<option value="">Selecione uma opção</option>
+		                   	<option value="1">Apodi</option>
+		                   	<option value="2">Caicó</option>
+		                   	<option value="3">Canguaretama</option>
+		                   	<option value="4">Ceará-Mirim</option>
+		                   	<option value="5">Currais Novos</option>
+		                   	<option value="6">Ipanguaçu</option>
+		                   	<option value="7">João Câmara</option>
+		                   	<option value="8">Lajes</option>
+		                   	<option value="9">Macau</option>
+		                   	<option value="10">Mossoró</option>
+		                   	<option value="11">Natal–Central</option>
+		                   	<option value="12">Natal–Cidade Alta</option>
+		                   	<option value="13">Natal–Zona Norte</option>
+		                   	<option value="14">Nova Cruz</option>
+		                   	<option value="15">Parelhas</option>
+		                   	<option value="16">Parnamirim</option>
+		                   	<option value="17">Pau dos Ferros</option>
+		                   	<option value="18">Santa Cruz</option>
+		                   	<option value="19">São Gonçalo do
+	Amarante</option>
+		                   	<option value="20">São Paulo do
+	Potengi</option>
+	               		</select>
+               		</div>
+				</div>
+
+
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+	 					<div class="input-group-prepend">
+	    					<label class="input-group-text" for="inputGroupSelect02">Esporte</label>
+	  					</div>
+		               	<select id="esporte" class="custom-select" class="inputGroupSelect02" required>
+		                	<option value="">Selecione uma opção</option>
+		                   	<option value="1">Atletismo</option>
+		                   	<option value="2">Futsal Masculino</option>
+			               	<option value="3">Futsal Feminino</option>
+			               	<option value="4">Voleibol Masculino</option>
+			               	<option value="5">Voleibol Feminino</option>
+			               	<option value="6">Queimada Masculina</option>
+		                   	<option value="7">Queimada Feminina</option>
+		                   	<option value="8">Basquete Masculino</option>
+		                   	<option value="9">Handebol Masculino</option>
+			                <option value="10">Handebol Feminino</option>
+			               	<option value="11">Tênis de Mesa Masculino</option>
+			               	<option value="12">Tênis de Mesa Feminino</option>
+			               	<option value="13">Natação</option>
+			               	<option value="14">Xadrez</option>
+		                   	<option value="15">Jogos Eletrônicos</option>
+	               		</select>
+	               	</div>	
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+	            <div class="col-sm-2 col-5">
+	            	<button type="submit" class="btn btn-primary btn-block" >Enviar</button>
+	            </div>
+        	</div>
+
+		</div>
+	</form>
+
+	<footer>
+		<h3>Felipe Gabriel Queiroz Rego</h3>
+		<h3>Maria Girlene Lucas da Silva</h3>
+		<h3>Francisco Francineudo Paulino Bezerra</h3>
+		<h3>Luis Lucilandio de Queiroz Mesquita</h3>
+		<p>IFRN-Copyright&copy;-2018.</p>
+		<p>Pau Dos Ferros (RN)</p>
+	</footer>
+</div>
+</body>
+</html>
